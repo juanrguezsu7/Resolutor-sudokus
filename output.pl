@@ -21,4 +21,5 @@ save_to_file(SolvedSudoku) :-
     open('sudoku_resuelto.txt', write, Stream),
     pretty_formatting(SolvedSudoku, Stream, 0),
     !,
+    write('\n'),
     close(Stream).
